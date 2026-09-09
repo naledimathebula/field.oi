@@ -8,6 +8,9 @@ function  drawlobes( ctx,w,h, time = 0) {
     const cy = h/2;
     const lobes =[
         { cx : w * 0.32, color : "rgba (90,60,220,0,9)"},
-        { cx : w * 0.68, color : "rgba (220,60,90,0,9)"}
+        { cx : w * 0.68, color : "rgba (120,70,230,0,9)"},
     ];
     
+    ctx.globalCompositeOperation = "multiply";
+    lobes.forEach( 1 => {
+    const g = ctx.createRadialGradient(l.cx, cy, 0, l.cx, cy, w * 0.3  * pulse);
