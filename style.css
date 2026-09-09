@@ -1,0 +1,9 @@
+body {
+    background : black ;            
+    display : flex ;
+    flex-direction : column ;
+    align-items : center ;
+    font-family : monospace ; color : white ;
+    margin : 0 ;
+    padding : 20px ;
+}
