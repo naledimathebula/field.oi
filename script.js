@@ -32,4 +32,8 @@ function noise (angle, seed ){
 }
 
 function drawRipples(ctx, w, h, time = 0) {
-    const cx
+    const cx = w/2, cy = h/2;
+    const rings= 14;
+    const maxR= = Math.max(w,h) * 0.62;
+
+    ctx.globalCompositeOperation = "screen";
