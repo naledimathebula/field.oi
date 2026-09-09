@@ -17,8 +17,19 @@ function  drawlobes( ctx,w,h, time = 0) {
     g.addColorStop(0, l.color);
     g.addColorStop(0.5, "rgba(200,120,220,0.5)");
     g.addColorStop(1, "rgba(255,255,255,0)");
-    ctx.beginPath();
-    ctx.arc(l.cx, cy, w * 0.3 * pulse, 0, Math.PI * 2);
-    ctx.fill();
+    ctx.fillStyle = g;
+    ctx.fillRect(0,0,w,h);
     });
+    ctx.globalCompositeOperation = "source-over";
 }
+
+function noise (angle, seed ){
+    return (
+        Math.sin(angle * 3 + seed) * 0.5 + 
+        Math.sin(angle * 7 + seed * 1.7) * 0.25 +
+        Math.sin(angle * 13 + seed * 2.3) * 0.125
+    );
+}
+
+function drawRipples(ctx, w, h, time = 0) {
+    const cx
