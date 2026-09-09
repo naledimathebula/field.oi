@@ -12,3 +12,9 @@ canvas {
     background : black ;
     border-radius : 8px ;
 }
+
+.label {
+    margin : 10px 0  4px 0 ;
+    font-size : 13px ;
+    color : white ;
+}
