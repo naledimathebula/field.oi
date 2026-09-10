@@ -47,4 +47,5 @@ function drawRipples(ctx, w, h, time = 0) {
         ctx.lineWidth = 6 + t * 4;
         
         ctx.beginPath();
+        const steps = 120;
     }
