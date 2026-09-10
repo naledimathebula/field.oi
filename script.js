@@ -46,4 +46,5 @@ function drawRipples(ctx, w, h, time = 0) {
         ctx.strokeStyle = `hsla(${hue}, 90%, 60%, ${70 + t * 30}%, ${alpha})`;
         ctx.lineWidth = 6 + t * 4;
         
+        ctx.beginPath();
     }
