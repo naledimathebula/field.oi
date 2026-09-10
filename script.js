@@ -48,4 +48,6 @@ function drawRipples(ctx, w, h, time = 0) {
         
         ctx.beginPath();
         const steps = 120;
+        for (let s = 0; s <= steps; s++) {
+            const angle = (s / steps) * Math.PI * 2;
     }
