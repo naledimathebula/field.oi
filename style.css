@@ -1,20 +1,25 @@
 body {
-    background : black ;            
-    display : flex ;
-    flex-direction : column ;
-    align-items : center ;
-    font-family : monospace ; color : white ;
-    margin : 0 ;
-    padding : 20px ;
+  background: #111;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
 
 canvas {
-    background : black ;
-    border-radius : 8px ;
+  background: #000;
+  border-radius: 8px;
 }
 
 .label {
-    margin : 10px 0  4px 0 ;
-    font-size : 13px ;
-    color : white ;
+  color: #aaa;
+  font: 12px sans-serif;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

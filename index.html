@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ripple Gradient</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Lobes / Ripples / Final</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class ="label"> Step 1 - base radial lobes</div>
-    <canvas id="canvas1" width="400" height="420"></canvas>
 
-    <div class ="label">Step 2 - add rippled ring strokes</div>
-    <canvas id ="canvas2" width="400" height="420"></canvas>
+<div class="col"><canvas id="c1" width="460" height="420"></canvas><div class="label">Lobes (static)</div></div>
+<div class="col"><canvas id="c2" width="460" height="420"></canvas><div class="label">Lobes + Ripples (static)</div></div>
+<div class="col"><canvas id="c3" width="460" height="420"></canvas><div class="label">Final (animated)</div></div>
 
-    <div class ="label">Step 3 - blur + blend (final)</div>
-    <canvas id ="canvas3" width="400" height="420"></canvas>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
