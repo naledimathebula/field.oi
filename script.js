@@ -37,3 +37,9 @@ function drawRipples(ctx, w, h, time = 0) {
     const maxR= = Math.max(w,h) * 0.62;
 
     ctx.globalCompositeOperation = "screen";
+
+    for (let i = 0; i < rings; i++) {
+        const t = (i / rings) + time * 0.5) % 1;
+        const baseR = 40 + t * maxR;
+        
+    }
