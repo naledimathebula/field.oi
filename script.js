@@ -41,5 +41,9 @@ function drawRipples(ctx, w, h, time = 0) {
     for (let i = 0; i < rings; i++) {
         const t = (i / rings) + time * 0.5) % 1;
         const baseR = 40 + t * maxR;
+        const hue = 260 - t * 120;
+        const alpha =0.18 *(1 - t) * (1 -Math.abs(0.5 - t));
+        ctx.strokeStyle = `hsla(${hue}, 90%, 60%, ${70 + t * 30}%, ${alpha})`;
+        ctx.lineWidth = 6 + t * 4;
         
     }
